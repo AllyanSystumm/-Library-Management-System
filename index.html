@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Library Management System</h1>
+    
+    <!-- Form to Add/Edit Book -->
+    <form id="book-form">
+      <input type="text" id="book-title" placeholder="Title" required>
+      <input type="text" id="book-author" placeholder="Author" required>
+      <input type="text" id="book-isbn" placeholder="ISBN" required>
+      <input type="hidden" id="book-id">
+      <button type="submit">Save Book</button>
+    </form>
+
+    <!-- Search and Filter -->
+    <div class="search-filter">
+      <input type="text" id="search-query" placeholder="Search by title or author">
+      <select id="filter-author">
+        <option value="">Filter by Author</option>
+        <!-- Options will be dynamically populated -->
+      </select>
+    </div>
+
+    <!-- Book List -->
+    <h2>Books</h2>
+    <ul id="book-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
